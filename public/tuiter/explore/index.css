@@ -9,9 +9,6 @@
   color: rgb(47, 51, 54);
 }
 
-i {
-}
-
 .wd-border {
   border-style: hidden;
   padding-left: 16px;
@@ -29,8 +26,9 @@ i {
 
 /* Input Field */
 .wd-input-field {
-  width: 90%;
+  width: 250%;
   height: 30px;
+  min-width: 5%;
   margin-left: 0;
   margin-top: 10px;
   border-radius: 400px;
@@ -118,6 +116,10 @@ i {
   justify-content: space-between;
 }
 
+.follow-btn {
+  align-self: center;
+}
+
 .left-inline {
   display: flex;
   align-items: center;
@@ -159,8 +161,7 @@ i {
   border-radius: 40px;
   font-size: 13px;
   color: white;
-  padding-left: 30px;
-  margin-bottom: 10px;
+  float: right;
 }
 
 .wd-explore-right-side {
@@ -171,10 +172,16 @@ i {
   max-width: 290px;
 }
 
-.wd-search-icon-2 {
-  display:flex;
-  float: right;
-}
+/*.wd-search-icon-2 {*/
+/*  position: relative;*/
+/*}*/
+
+/*.wd-search-icon-2 .fa-ellipsis {*/
+/*  position: absolute;*/
+/*  padding: 10px;*/
+/*  pointer-events: none;*/
+/*}*/
+
 
 .wd-full-main {
   width: 605px;
@@ -194,7 +201,6 @@ i {
 
 .wd-account-info-follow-btn {
   display: flex;
-  justify-content: space-between;
 }
 
 .btn.btn-rounded {
@@ -227,14 +233,20 @@ i {
 }
 
 .wd-account-info {
- margin: 0;
 }
 
 .wd-account-text {
   color: black;
   font-weight: bolder;
   font-size: 13px;
-  padding-left: 10px;
+  padding-left: 5px;
+  color: black;
+}
+
+.wd-who-to-follow {
+  color: black;
+  font-weight: bolder;
+  font-size: 13px;
 }
 
 .wd-account-handle {
