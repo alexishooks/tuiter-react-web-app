@@ -68,19 +68,34 @@
 .wd-input {
   border-radius: 50px;
   font-size: small;
-  width: 100%;
+  width: 280%;
   height: 30px;
   border-style: hidden;
   color: white;
 }
 
+.wd-input-and-search {
+  position: relative;
+  display: inline-block;
+}
+
+.wd-input-search-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .fa-magnifying-glass {
-  color: white;
+  color: darkgrey;
 }
 
 .wd-row {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-magnifying-glass {
+align-items: center;
 }
 
 .fa-gear {

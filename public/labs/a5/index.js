@@ -232,7 +232,6 @@ const init = () => {
   const clickable = $('.clickable');
   clickable.click(handleClick());
 
-  // IDK
 
   const handleEventTarget = (event) => {
     const target = event.target;

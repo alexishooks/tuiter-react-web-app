@@ -2,15 +2,21 @@ import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
 
 const ExploreComponent = () => {
   return(`
-<div class="full d-inline-block">
-   <div class="wd-row">
-            
+<div class="wd-row">
+      <div class="wd-input-and-search">
            <input
-            class="wd-input mt-1 mb-2 ms-3 ps-1 bg-dark"
+            class="wd-input mt-1 mb-2 ms-3 ps-md-4 bg-dark"
             placeholder="Search Twitter"/>  
             
-        <i class="fa-solid fa-gear ms-2"></i>       
-   </div>
+            <div>
+              <span class="wd-input-search-icon">
+                <i class="fa-solid fa-magnifying-glass ms-4 mt-sm-2 small"></i>  
+              </span>
+            </div>  
+       </div>  
+       
+        <div><i class="fa-solid fa-gear ms-2 mt-1"></i></div>
+</div>     
    
    <div class="wd-explore-navbar mb-1 ms-3">
 
@@ -34,7 +40,6 @@ const ExploreComponent = () => {
    </div>
         <div><img class="ms-3 wd-explore-main-img " src="../../images/spacex.jpeg"></div>
          <div class="temp">${PostSummaryList()}</div>
-   </div>
     `)
       ;
 }
