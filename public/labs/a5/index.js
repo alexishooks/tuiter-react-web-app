@@ -1,5 +1,7 @@
 // alert('Hello World!');
 
+import React from "react";
+
 console.log('Hello World!');
 
 console.log('Variables and Constants');
@@ -255,6 +257,10 @@ const init = () => {
   }
   hideBtn.click(hideHandler);
   showBtn.click(showHandler);
+
+
+  const test = () => <h2>{test()}</h2>
+
 }
 $(init);
 

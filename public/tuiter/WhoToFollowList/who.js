@@ -1,5 +1,6 @@
 export default [
-  { avatarIcon: '',
+  {
+    avatarIcon: '',
     userName: 'Who to Follow',
     handle: ''},
 
