@@ -1,7 +1,7 @@
 const NavigationSidebar = () => {
   return(`
    <div class="list-group">
-     <a class="list-group-item bg-dark" href="/">
+     <a class="list-group-item bg-dark" href="https://github.com/alexishooks/tuiter-react-web-app/tree/a6">
        <i class="fab fa-twitter"></i></a>
 
      <a href="https://github.com/alexishooks/tuiter-react-web-app/tree/a6" class="list-group-item wd-nav-sidebar-icon-plus-label bg-dark">
@@ -45,7 +45,7 @@ const NavigationSidebar = () => {
        
    </div>
    <div class="d-grid mt-2">
-     <a href="tweet.html"
+     <a href="https://github.com/alexishooks/tuiter-react-web-app/tree/a6"
         class="btn btn-primary btn-block rounded-pill">
         Tweet</a>
    </div>
