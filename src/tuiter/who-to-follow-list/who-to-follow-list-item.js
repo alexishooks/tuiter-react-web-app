@@ -17,7 +17,7 @@ const WhoToFollowListItem = (
       return (
           <div className="border bg-light border-secondary border-thin p-1">
             <div className="d-inline-flex">
-              <img className="wd-avatarIcon ms-1 me-2"
+              <img alt="temp" className="wd-avatarIcon ms-1 me-2"
                    src={`/images/${who.avatarIcon}`}/>
 
               <div className="m-0">
