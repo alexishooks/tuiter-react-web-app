@@ -29,7 +29,7 @@ const WhoToFollowListItem = (
                 <div className="wd-handle-text">{who.handle}</div>
               </div>
             </div>
-            <a href="#"
+            <a href="https://github.com/alexishooks/tuiter-react-web-app/tree/a6"
                className="btn btn-primary rounded-pill m-1 float-end">
               Follow</a>
           </div>
