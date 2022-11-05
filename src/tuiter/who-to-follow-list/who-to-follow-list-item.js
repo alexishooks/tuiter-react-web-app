@@ -34,7 +34,6 @@ const WhoToFollowListItem = (
               Follow</a>
           </div>
       );
-
     }
   };
 
