@@ -10,7 +10,16 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
         tuit = {}
       }
   ) => {
-    let liked;
+
+    // function myFunction() {
+    //   if (tuit.liked) {
+    //     document.getElementById("liked").innerHTML = "<FontAwesomeIcon id=\"#liked\" icon={faShare} className={}/>";
+    //   }
+    //   else {
+    //     return`<FontAwesomeIcon id="#notliked" icon={faShare} className="me-1"/>`;
+    //   }
+    // }
+
     return(
       <>
       <li className="list-group-item">
@@ -28,19 +37,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
           </div>
 
           <div className="col-3">
-            <script>
-              {
-              function myfunction() {
-                if (tuit.liked) {
-                  `<FontAwesomeIcon icon={faShare} className="me-1 wd-liked"/>`
-                }
-                else {
-                  `<FontAwesomeIcon icon={faShare} className="me-1"/>`
-                }
-            }
-              }
-            </script>
-
+            <FontAwesomeIcon id="#liked" icon={faHeart}/>
             {tuit.likes}
           </div>
 
