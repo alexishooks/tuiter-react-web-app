@@ -124,3 +124,7 @@ align-items: center;
 .wd-verified {
   color: dodgerblue;
 }
+
+.wd-liked {
+  color: darkred;
+}

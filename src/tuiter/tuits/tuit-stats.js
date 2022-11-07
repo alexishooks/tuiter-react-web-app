@@ -4,33 +4,52 @@ import {faComment, faRetweet, faHeart, faShare} from '@fortawesome/free-solid-sv
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
+
   const TuitStat = (
       {
         tuit = {}
       }
   ) => {
-  return(
+    let liked;
+    return(
+      <>
       <li className="list-group-item">
         <div className="row">
           <div className="col-3">
-            <FontAwesomeIcon icon={faComment} />
+            <FontAwesomeIcon icon={faComment} className="me-1"/>
+            {tuit.replies}
           </div>
 
           <div className="col-3">
-            <FontAwesomeIcon icon={faRetweet} />
-            {tuit.retuits}
+            <div>
+            <FontAwesomeIcon icon={faRetweet} className="me-1"/>
+              {tuit.retuits}
+            </div>
           </div>
 
           <div className="col-3">
-            <FontAwesomeIcon icon={faHeart} />
+            <script>
+              {
+              function myfunction() {
+                if (tuit.liked) {
+                  `<FontAwesomeIcon icon={faShare} className="me-1 wd-liked"/>`
+                }
+                else {
+                  `<FontAwesomeIcon icon={faShare} className="me-1"/>`
+                }
+            }
+              }
+            </script>
+
             {tuit.likes}
           </div>
 
           <div className="col-3">
-            <FontAwesomeIcon icon={faShare} />
+            <FontAwesomeIcon icon={faShare} className="me-1"/>
           </div>
         </div>
       </li>
+        </>
   );
 };
 export default TuitStat;

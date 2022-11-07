@@ -23,6 +23,7 @@ const Todos = () => {
     };
     setTodo(newTodo);
   }
+
   return (
       <>
         <h3>Todos</h3>
@@ -33,9 +34,10 @@ const Todos = () => {
             <button onClick={createTodoClickHandler}
                     className="btn btn-primary w-25 float-end ">Create</button>
 
-            <input onClick={todoChangeHandler}
-                   value={todo.do}
-                   className="form-control w-75"/>
+            <input
+                onChange={todoChangeHandler}
+                value={todo.do}
+                className="form-control w-75"/>
           </li>
         </ul>
 

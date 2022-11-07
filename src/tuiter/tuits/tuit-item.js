@@ -28,15 +28,16 @@ const TuitItem = (
 
               <FontAwesomeIcon icon={faX} className="float-end"
                   onClick={() => deleteTuitHandler(tuit._id)}/>
-
               {tuit.userName}
               <FontAwesomeIcon icon={faCircleCheck} className="wd-verified ms-1 me-1"/>
               {tuit.handle} . {tuit.time}
             </div>
+
             <div>{tuit.tuit}</div>
           </div>
+          <TuitStat tuit={tuit}/>
         </div>
-        <TuitStat/>
+
       </li>
   );
 };
