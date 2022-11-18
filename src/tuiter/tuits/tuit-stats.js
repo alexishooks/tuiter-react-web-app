@@ -13,10 +13,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
     // function myFunction() {
     //   if (tuit.liked) {
-    //     document.getElementById("liked").innerHTML = "<FontAwesomeIcon id=\"#liked\" icon={faShare} className={}/>";
+    //     document.getElementById("liked").innerHTML = "<FontAwesomeIcon icon={faShare} className='wd-liked me-1'/>";
     //   }
     //   else {
-    //     return`<FontAwesomeIcon id="#notliked" icon={faShare} className="me-1"/>`;
+    //     document.getElementById("liked").innerHTML = "<FontAwesomeIcon icon={faShare} className='me-1'/>";
     //   }
     // }
 
