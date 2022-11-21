@@ -5,7 +5,7 @@ import tuits from '../data/tuits.json';
 import {createTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const initialState = {
-  tuits: [],
+  tuits:[tuits],
   loading: false
 }
   const currentUser = {
