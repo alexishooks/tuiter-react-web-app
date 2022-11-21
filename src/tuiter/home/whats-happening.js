@@ -3,7 +3,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faImage, faChartSimple, faFaceSmile, faLocationDot, faFile}
 from "@fortawesome/free-solid-svg-icons";
 import {useDispatch} from "react-redux";
-import {createTuit} from "../reducers/tuits-reducer";
+import {createTuitThunk}
+  from "../../services/tuits-thunks";
 
 
 
@@ -14,7 +15,7 @@ const WhatsHappening = () => {
     const newTuit = {
       tuit: whatsHappening
     }
-    dispatch(createTuit(newTuit))
+    dispatch(createTuitThunk(newTuit))
   }
   return (
       <div className="row">

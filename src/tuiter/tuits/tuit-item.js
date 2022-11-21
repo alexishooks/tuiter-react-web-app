@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCircleCheck, faX } from "@fortawesome/free-solid-svg-icons"
 import {useDispatch} from "react-redux";
 import TuitStat from "./tuit-stats";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -13,7 +13,7 @@ const TuitItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
   return(
       <li className="list-group-item">

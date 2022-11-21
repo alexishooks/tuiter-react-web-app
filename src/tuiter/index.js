@@ -12,7 +12,7 @@ import tuitsReducer from "./reducers/tuits-reducer";
 import HomeComponent from "./home";
 
 const store = configureStore({reducer: {who: whoReducer,
-    tuits: tuitsReducer}});
+    tuitsData: tuitsReducer}});
 
 function Tuiter() {
   return (
