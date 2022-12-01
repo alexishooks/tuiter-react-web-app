@@ -1,6 +1,5 @@
 import axios from 'axios';
-const REACT_APP_API_BASE_RENDER = 'https://tuiter-node-server-pbuz.onrender.com/api/';
-const API_BASE = process.env.REACT_APP_API_BASE_RENDER;
+const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
 
 export const findTuits = async () => {
